@@ -19,8 +19,6 @@ app.all('/app/*', function(req, res, next)
   next();
 });
 
-// app.use('/.well-known', express.static('static/.well-known'))
-
 function sendFile(res, fileURI, contentType) {
   var file = './static/' + fileURI;
 
@@ -47,7 +45,9 @@ app.get('/', (req, res) => {
   sendFile(res, 'index.html');
 });
 
-app.use('/.well-known', express.static('static/.well-known'))
+app.get('/.well-known/:file', (req, res) => {
+  sendFile(res, '.well-known/' + req.params.file, 'text/plain');
+});
 
 app.get('/:file', (req, res) => {
   sendFile(res, req.params.file);
