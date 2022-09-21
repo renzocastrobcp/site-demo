@@ -49,6 +49,10 @@ app.get('/.well-known/:file', (req, res) => {
   sendFile(res, '.well-known/' + req.params.file, 'text/plain');
 });
 
+app.get('/app/:file', (req, res) => {
+  sendFile(res, 'app.html');
+});
+
 app.get('/:file', (req, res) => {
   sendFile(res, req.params.file);
 });
