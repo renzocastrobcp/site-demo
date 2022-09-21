@@ -32,7 +32,7 @@ function sendFile(res, fileURI, contentType) {
     if(err) {
       res.send("Oops! Couldn't find that file.");
     } else {
-      contentType = contentType || mime.lookup(file) || 'text/plain';
+      contentType = contentType || mime.getType(file) || 'text/plain';
 
       // set the content type based on the file
       res.setHeader('content-type', contentType);
