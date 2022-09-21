@@ -1,9 +1,16 @@
 {
+  "webcredentials": {
+    "apps": [
+      "T84QZS65DQ.com.facebook.Facebook"
+    ]
+  },
   "applinks": {
     "details": [
       {
         "appID": "PFH6A727W5.com.demo.universal.links",
-        "paths": ["app/*"]
+        "paths": [
+          "/app/*"
+        ]
       }
     ]
   }
