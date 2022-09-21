@@ -1,10 +1,16 @@
 {
+  "webcredentials": {
+    "apps": [ "PFH6A727W5.com.demo.universal.links" ]
+  },
   "applinks": {
     "details": [
       {
         "appID": "PFH6A727W5.com.demo.universal.links",
-        "paths": [
-          "/app/*"
+        "components": [
+          {
+            "/": "/app/*",
+            "comment": "Matches any URL with a path that starts with /app/."
+          }
         ]
       }
     ]
