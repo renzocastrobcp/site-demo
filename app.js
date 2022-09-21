@@ -8,7 +8,7 @@ const app = express();
 app.use('/.well-known', express.static('static/.well-known'))
 
 app.get('/', (req, res) => {
-  res.status(200).sendFile(__dirname +  '/stsatic/index.html').end();
+  res.sendFile(__dirname +  '/stsatic/index.html');
 });
 
 // Start the server
