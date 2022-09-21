@@ -47,9 +47,12 @@ app.get('/', (req, res) => {
   sendFile(res, 'index.html');
 });
 
+app.use('/.well-known', express.static('static/.well-known'))
+
 app.get('/:file', (req, res) => {
   sendFile(res, req.params.file);
 });
+
 
 // Start the server
 const PORT = parseInt(process.env.PORT) || 8080;
