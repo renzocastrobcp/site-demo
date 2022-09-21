@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "PFH6A727W5.com.demo.universal.links",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
