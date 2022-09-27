@@ -1,11 +1,33 @@
 {
   "webcredentials": {
-    "apps": [ "PFH6A727W5.com.demo.universal.links" ]
+    "apps": [
+      "PFH6A727W5.com.demo.universal.links",
+      "PFH6A727W5.com.bcp.innovacxion.yapeapp.dev",
+      "PFH6A727W5.com.bcp.innovacxion.yapeapp"
+    ]
   },
   "applinks": {
     "details": [
       {
         "appID": "PFH6A727W5.com.demo.universal.links",
+        "components": [
+          {
+            "/": "/app/*",
+            "comment": "Matches any URL with a path that starts with /app/."
+          }
+        ]
+      },
+      {
+        "appID": "PFH6A727W5.com.bcp.innovacxion.yapeapp.dev",
+        "components": [
+          {
+            "/": "/app/*",
+            "comment": "Matches any URL with a path that starts with /app/."
+          }
+        ]
+      },
+      {
+        "appID": "PFH6A727W5.com.bcp.innovacxion.yapeapp",
         "components": [
           {
             "/": "/app/*",

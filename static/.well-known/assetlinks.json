@@ -10,5 +10,29 @@
                 "66:B7:C3:27:7B:F3:2B:C8:97:F4:AE:2C:ED:4F:C8:6D:23:54:93:BB:20:AB:0D:7F:CE:47:EF:B6:0E:16:91:13"
             ]
         }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace":"android_app",
+            "package_name":"com.bcp.innovacxion.yapeapp.dev",
+            "sha256_cert_fingerprints": [
+                "66:B7:C3:27:7B:F3:2B:C8:97:F4:AE:2C:ED:4F:C8:6D:23:54:93:BB:20:AB:0D:7F:CE:47:EF:B6:0E:16:91:13"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace":"android_app",
+            "package_name":"com.bcp.innovacxion.yapeapp",
+            "sha256_cert_fingerprints": [
+                "66:B7:C3:27:7B:F3:2B:C8:97:F4:AE:2C:ED:4F:C8:6D:23:54:93:BB:20:AB:0D:7F:CE:47:EF:B6:0E:16:91:13"
+            ]
+        }
     }
 ]
